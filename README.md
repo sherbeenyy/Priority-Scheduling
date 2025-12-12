@@ -16,16 +16,16 @@ This project implements both non-preemptive and preemptive Priority Scheduling w
 
 ```sh
 # Build
-make -C /media/ahmed-hesham/space1/coding/OSproject/process_scheduler
+make -C /path/to/process_scheduler
 
 # Run with built-in sample workload
-/media/ahmed-hesham/space1/coding/OSproject/process_scheduler/bin/scheduler --preemptive --aging 5 1
+/path/to/process_scheduler/bin/scheduler --preemptive --aging 5 1
 
 # Or non-preemptive without aging
-/media/ahmed-hesham/space1/coding/OSproject/process_scheduler/bin/scheduler --non-preemptive --quiet
+/path/to/process_scheduler/bin/scheduler --non-preemptive --quiet
 
 # Run with an input file (PID ARRIVAL BURST PRIORITY per line)
-/media/ahmed-hesham/space1/coding/OSproject/process_scheduler/bin/scheduler --input processes.txt --preemptive
+/path/to/the/file --input processes.txt --preemptive
 ```
 
 Example `processes.txt`:
